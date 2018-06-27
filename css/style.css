@@ -1,0 +1,207 @@
+.header {
+	width: 1920px;
+	height: 70px;
+	line-height: 70px;
+	background: rgba(255,255,255,1);
+	box-shadow: 1px 0px 0px rgba(221,221,221,1);
+	border-bottom: 1px solid #DDDDDD;
+}
+
+.header-container {
+	width: 1152px;
+	height: 70px;
+	margin: 0 auto;
+}
+
+.header .header-container img {
+	float: left;
+	width: 181px;
+	height: 30px;
+	margin-top: 20px;
+	vertical-align: middle;
+}
+
+.header .header-container .header-text {
+	float: right;
+}
+
+.header .header-container .header-text li {
+	display: inline;
+	margin-left: 55px;
+}
+
+.header .header-container .header-text li a {
+	color: #333333;
+	text-decoration: none;
+}
+
+.main {
+	width: 898px;
+	height: 630px;
+	position: absolute;
+	top: 137px;
+	left: 510px;
+	border-bottom: 1px solid #DDD;
+	border-left: 1px solid #DDD;
+	border-right: 1px solid #DDD;
+}
+
+/*表中竖虚线*/
+.main::after {
+	content: '';
+	width: 1px;
+	height: 284px;
+	border-left: 2px dashed #DDDDDD;
+	position: absolute;
+	top: 149px;
+	left: 449px;
+}
+
+/*表上边框*/
+.main-left::before {
+	content: '';
+	width: 450px;
+	height: 10px;
+	background-color: #0068B7;
+	position: absolute;
+	top: 0;
+	left: -1px;
+}
+
+.main-right::before {
+	content: '';
+	width: 450px;
+	height: 10px;
+	background-color: #4A88F7;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.main-left, .main-right {
+	width: 449px;
+	height: 630px;
+	float: left;
+	position: relative;
+}
+
+.main-left .tbl-title, .main-right .tbl-title {
+	font-size: 24px;
+	font-family: PingFangSC-Regular;
+	color: rgba(74,136,247,1);
+}
+
+.main-left .tbl-title {
+	position: absolute;
+	top: 57px;
+	left: 158px;
+}
+
+.main-right .tbl-title {
+	position: absolute;
+	top: 57px;
+	left: 108px;
+}
+
+.main-left .tbl, .main-right .tbl {
+	width: 380px;
+	height: 336px;
+	position: absolute;
+	top: 116px;
+	left: 34px;
+}
+
+.main-left .tbl td, .main-right .tbl td {
+	padding-bottom: 24px;
+}
+
+.main-left .tbl p, .main-right .tbl p {
+	font-size: 16px;
+	font-family: PingFangSC-Regular;
+	color: rgba(51,51,51,1);
+	margin-bottom: 10px;
+}
+
+.main-left .tbl input, .main-right .tbl input {
+	width:364px;
+	height:40px;
+	border: 1px solid #DDD;
+	padding: 0;
+	padding-left: 16px;
+	font-size: 14px;
+	font-family: PingFangSC-Light;
+	color: rgba(153,153,153,1);
+}
+
+.main-footer .check{
+	position: absolute;
+	top: 487px;
+	left: 261px;
+}
+
+.main-footer .check input{
+	width: 14px;
+	height: 14px;
+	margin: 0 8px 0 0;
+	padding: 0;
+	vertical-align: middle;
+}
+
+.main-footer .check span {
+	font-size: 14px;
+	font-family: PingFangSC-Light;
+	color: rgba(153,153,153,1);
+}
+
+.main-footer .btn {
+	position: absolute;
+	top: 528px;
+	left: 261px;
+}
+
+.main-footer .btn button {
+	width: 380px;
+	height: 40px;
+	background-color: #4A88F7;
+	border: none;
+	color: rgba(255,255,255,1);
+}
+
+.main-footer .text {
+	position: absolute;
+	top: 591px;
+	left: 359px;
+}
+
+.main-footer .text p {
+	color: rgba(51,51,51,1);
+}
+
+.main-footer .text a {
+	color: #4A88F7;
+	text-decoration: none;
+}
+
+.header .header-container .header-text li, .main-footer .btn button, .main-footer .text p, .main-footer .text a {
+	font-size: 16px;
+	font-family: PingFangSC-Light;
+}
+
+.footer .footer-text {
+	width: 574px;
+	height: 51px;
+	font-size: 14px;
+	font-family: PingFangSC-Light;
+	color: rgba(51,51,51,1);
+	line-height: 36px;
+	text-align: center;
+	position: absolute;
+	top: 890px;
+	left: 673px;
+}
+
+.footer .footer-text a {
+	color: #A40000;
+	text-decoration: none;
+}
+
